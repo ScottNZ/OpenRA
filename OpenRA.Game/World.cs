@@ -188,12 +188,25 @@ namespace OpenRA
 
 		public bool Paused { get; internal set; }
 		public bool PredictedPaused { get; internal set; }
+		public bool PauseLocked { get; internal set; }
 		public bool IsShellmap = false;
 
 		public void SetPauseState(bool paused)
 		{
+			if (PauseLocked)
+				return;
 			IssueOrder(Order.PauseGame(paused));
 			PredictedPaused = paused;
+		}
+
+		public void SetLocalPauseState(bool paused)
+		{
+			Paused = PredictedPaused = paused;
+		}
+
+		public void SetPauseLocked(bool locked)
+		{
+			PauseLocked = locked;
 		}
 
 		public void Tick()

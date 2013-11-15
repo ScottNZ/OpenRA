@@ -15,6 +15,7 @@ using OpenRA.Graphics;
 using OpenRA.Mods.RA.Activities;
 using OpenRA.Mods.RA.Buildings;
 using OpenRA.Mods.RA.Move;
+using OpenRA.Mods.RA.Scripting;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.RA.Missions
@@ -271,7 +272,7 @@ namespace OpenRA.Mods.RA.Missions
 				.QueueActivity(new Move.Move(alliedBaseMovePoint.Location, 0));
 		}
 
-		void OnSuperTankDomeInfiltrated(Actor spy)
+		void OnSuperTankDomeInfiltrated(Actor self, Actor spy)
 		{
 			if (superTankDomeInfiltratedTick != -1) return;
 

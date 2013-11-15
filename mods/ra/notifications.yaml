@@ -24,7 +24,9 @@ Speech:
 		NavalUnitLost: navylst1
 		AirUnitLost: aunitl1
 		BuildingCaptured: strucap1
-
+		ReinforcementsArrived: reinfor1
+		SignalFlareNorth: flaren1
+		AlliedReinforcementsArrived: aarrive1
 
 Sounds:
 	Notifications:

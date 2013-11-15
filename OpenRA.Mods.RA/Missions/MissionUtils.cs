@@ -218,34 +218,4 @@ namespace OpenRA.Mods.RA.Missions
 				self.QueueActivity(queued, new AttackMove.AttackMoveActivity(self, new Attack(Target.FromActor(enemy), WRange.FromCells(3))));
 		}
 	}
-
-	class TransformedAction : INotifyTransformed
-	{
-		Action<Actor> a;
-
-		public TransformedAction(Action<Actor> a)
-		{
-			this.a = a;
-		}
-
-		public void OnTransformed(Actor toActor)
-		{
-			a(toActor);
-		}
-	}
-
-	class InfiltrateAction : IAcceptInfiltrator
-	{
-		Action<Actor> a;
-
-		public InfiltrateAction(Action<Actor> a)
-		{
-			this.a = a;
-		}
-
-		public void OnInfiltrate(Actor self, Actor spy)
-		{
-			a(spy);
-		}
-	}
 }

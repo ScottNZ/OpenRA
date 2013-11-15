@@ -18,6 +18,7 @@ using OpenRA.Mods.RA.Activities;
 using OpenRA.Mods.RA.Buildings;
 using OpenRA.Mods.RA.Move;
 using OpenRA.Mods.RA.Render;
+using OpenRA.Mods.RA.Scripting;
 using OpenRA.Traits;
 using OpenRA.Widgets;
 
@@ -241,7 +242,7 @@ namespace OpenRA.Mods.RA.Missions
 				baseGuardTicks = 100;
 		}
 
-		void OnLabInfiltrated(Actor spy)
+		void OnLabInfiltrated(Actor self, Actor spy)
 		{
 			if (spy == allies1Spy) allies1SpyInfiltratedLab = true;
 			else if (spy == allies2Spy) allies2SpyInfiltratedLab = true;
@@ -469,13 +470,9 @@ namespace OpenRA.Mods.RA.Missions
 	{
 		public Player OldOwner;
 
-		void OnTruckHijacked(Actor spy) { }
-
 		public Allies04Hijackable(Actor self)
 		{
 			OldOwner = self.Owner;
-
-			self.AddTrait(new InfiltrateAction(OnTruckHijacked));
 		}
 
 		public void OnInfiltrate(Actor self, Actor spy)

@@ -42,6 +42,7 @@
 		SuccessRate: 20
 		EjectOnGround: yes
 		EjectInAir: no
+	Huntable:
 
 ^Tank:
 	AppearsOnRadar:
@@ -87,6 +88,7 @@
 		SuccessRate: 20
 		EjectOnGround: yes
 		EjectInAir: no
+	Huntable:
 
 ^Infantry:
 	AppearsOnRadar:
@@ -142,6 +144,7 @@
 		HealIfBelow: 1
 		DamageCooldown: 125
 		RequiresTech: InfantryHealing
+	Huntable:
 
 ^Ship:
 	AppearsOnRadar:
@@ -174,6 +177,7 @@
 	Guard:
 	Guardable:
 	BodyOrientation:
+	Huntable:
 
 ^Plane:
 	AppearsOnRadar:
@@ -203,6 +207,7 @@
 	UpdatesPlayerStatistics:
 	CombatDebugOverlay:
 	BodyOrientation:
+	Huntable:
 
 ^Helicopter:
 	Inherits: ^Plane
@@ -252,6 +257,7 @@
 	FrozenUnderFog:
 	GpsDot:
 		String:Structure
+	Huntable:
 
 ^Wall:
 	AppearsOnRadar:
