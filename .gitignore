@@ -16,11 +16,11 @@ _ReSharper.*/
 mods/*/*.dll
 /*.dll
 /*.dll.config
-*.pdb
-*.mdb
-*.exe
 /*.so
 /*.dylib
+/*.pdb
+/*.mdb
+/*.exe
 
 # backup files by various editors
 *~
