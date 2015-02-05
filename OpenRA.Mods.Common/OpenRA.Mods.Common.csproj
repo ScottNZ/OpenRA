@@ -451,6 +451,8 @@
     <Compile Include="UtilityCommands\ImportLegacyMapCommand.cs" />
     <Compile Include="UtilityCommands\LegacyMapImporter.cs" />
     <Compile Include="UtilityCommands\RemapShpCommand.cs" />
+    <Compile Include="UtilityCommands\StyleCop\BracesMustNotBeUsedForASingleStatement.cs" />
+    <Compile Include="UtilityCommands\StyleCop\OpenRASourceAnalyzer.cs" />
     <Compile Include="UtilityCommands\UpgradeMapCommand.cs" />
     <Compile Include="UtilityCommands\UpgradeModCommand.cs" />
     <Compile Include="UtilityCommands\UpgradeRules.cs" />
@@ -515,6 +517,9 @@
     <Compile Include="LoadScreens\BlankLoadScreen.cs" />
     <Compile Include="UtilityCommands\CheckYaml.cs" />
     <Compile Include="UtilityCommands\CheckCodeStyle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UtilityCommands\StyleCop\OpenRASourceAnalyzer.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -107,8 +107,9 @@ renderers: $(rsdl2_TARGET) $(rnull_TARGET)
 mod_common_SRCS := $(shell find OpenRA.Mods.Common/ -iname '*.cs')
 mod_common_TARGET = mods/common/OpenRA.Mods.Common.dll
 mod_common_KIND = library
-mod_common_DEPS = $(game_TARGET)
+mod_common_DEPS = $(game_TARGET) OpenRA.Mods.Common/UtilityCommands/StyleCop/OpenRASourceAnalyzer.xml
 mod_common_LIBS = $(COMMON_LIBS) $(STD_MOD_LIBS) thirdparty/StyleCop.dll thirdparty/StyleCop.CSharp.dll thirdparty/StyleCop.CSharp.Rules.dll
+mod_common_EXTRA = -resource:OpenRA.Mods.Common/UtilityCommands/StyleCop/OpenRASourceAnalyzer.xml,OpenRA.Mods.Common.UtilityCommands.StyleCop.OpenRASourceAnalyzer.xml
 PROGRAMS += mod_common
 mod_common: $(mod_common_TARGET)
 

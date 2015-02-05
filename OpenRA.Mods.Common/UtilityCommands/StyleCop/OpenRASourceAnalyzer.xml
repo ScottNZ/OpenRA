@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SourceAnalyzer Name="OpenRASourceAnalyzer">
+  <Description>Analyzes code for OpenRA code style violations.</Description>
+  <Rules>
+    <Rule Name="BracesMustNotBeUsedForASingleStatement" CheckId="OR0001">
+      <Context>Braces must not be used for a single statement.</Context>
+      <Description>Braces must not be used for a single statement.</Description>
+    </Rule>
+  </Rules>
+</SourceAnalyzer>
