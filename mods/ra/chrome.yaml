@@ -958,3 +958,6 @@ mainmenu-border: dialog.png
 	corner-tr: 728,387,40,40
 	corner-bl: 648,467,40,40
 	corner-br: 728,467,40,40
+
+doge: doge.png
+	wow: 0,0,265,265

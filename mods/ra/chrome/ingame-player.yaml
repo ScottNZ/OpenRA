@@ -371,3 +371,8 @@ Container@PLAYER_WIDGETS:
 									Y: 3
 									ImageCollection: scrollbar
 									ImageName: down_arrow
+		Image@DOGE:
+			X: 42
+			Y: 42
+			ImageName: wow
+			ImageCollection: doge
