@@ -32,7 +32,7 @@
 		Image: 120MM
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 40
+		Damage: 50
 		DeathType: 4
 		Versus:
 			None: 20
@@ -61,7 +61,7 @@
 		Image: 120MM
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
-		Damage: 40
+		Damage: 50
 		DeathType: 4
 		Versus:
 			None: 20
