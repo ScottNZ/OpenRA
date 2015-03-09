@@ -1,6 +1,6 @@
 25mm:
 	ReloadDelay: 13
-	Range: 4c0
+	Range: 6c0
 	Report: CANNON2.AUD
 	Projectile: Bullet
 		Speed: 853
@@ -25,7 +25,7 @@
 
 90mm:
 	ReloadDelay: 50
-	Range: 4c768
+	Range: 6c0
 	Report: CANNON1.AUD
 	Projectile: Bullet
 		Speed: 682
@@ -52,7 +52,7 @@
 
 105mm:
 	ReloadDelay: 70
-	Range: 4c768
+	Range: 6c0
 	Report: CANNON1.AUD
 	Burst: 2
 	BurstDelay: 4
@@ -81,7 +81,7 @@
 
 120mm:
 	ReloadDelay: 90
-	Range: 4c768
+	Range: 6c0
 	Report: CANNON1.AUD
 	Burst: 2
 	InvalidTargets: Air, Infantry
