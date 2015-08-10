@@ -57,7 +57,7 @@
     <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NullGraphicsDevice.cs" />
+    <Compile Include="**\*.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenRA.Game\OpenRA.Game.csproj">
